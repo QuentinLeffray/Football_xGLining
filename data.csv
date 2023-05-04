@@ -1,0 +1,15 @@
+x,y,xG,result,team,minute,shotType,player,match_id,situation,player_assisted,lastAction
+0.899000015258789,0.29600000381469727,0.04843491315841675,MissedShots,Lille,19,LeftFoot,Jonathan Bamba,19915,OpenPlay,Angel Gomes,Pass
+0.8919999694824219,0.4809999847412109,0.046179477125406265,MissedShots,Lille,26,Head,Leny Yoro,19915,FromCorner,André Gomes,Chipped
+0.9230000305175782,0.3039999961853027,0.03359222412109375,SavedShot,Lille,34,RightFoot,Jonathan Bamba,19915,SetPiece,Rémy Cabella,Pass
+0.8230000305175781,0.4229999923706055,0.06385224312543869,SavedShot,Lille,41,RightFoot,Angel Gomes,19915,OpenPlay,Jonathan Christian David,Pass
+0.9209999847412109,0.49400001525878906,0.3794783055782318,Goal,Lille,45,RightFoot,Jonathan Christian David,19915,OpenPlay,Jonathan Bamba,Cross
+0.9390000152587891,0.6609999847412109,0.26113757491111755,SavedShot,Lille,49,LeftFoot,Gabriel Gudmundsson,19915,OpenPlay,Rémy Cabella,Pass
+0.885,0.5,0.7600951194763184,Goal,Lille,60,RightFoot,Jonathan Christian David,19915,Penalty,,Standard
+0.885,0.5,0.7600951194763184,Goal,Lille,78,RightFoot,Jonathan Christian David,19915,Penalty,,Standard
+0.879000015258789,0.6580000305175782,0.08838524669408798,SavedShot,Lyon,11,RightFoot,Bradley Barcola,19915,OpenPlay,,TakeOn
+0.9059999847412109,0.3770000076293945,0.0628693550825119,Goal,Lyon,63,RightFoot,Bradley Barcola,19915,OpenPlay,,None
+0.9359999847412109,0.5420000076293945,0.10303051769733429,Goal,Lyon,82,Head,Alexandre Lacazette,19915,OpenPlay,Sael Kumbedi,Chipped
+0.865999984741211,0.48200000762939454,0.37227028608322144,Goal,Lyon,88,RightFoot,Alexandre Lacazette,19915,OpenPlay,Bradley Barcola,Pass
+0.8630000305175781,0.514000015258789,0.07091768831014633,MissedShots,Lyon,91,LeftFoot,Alexandre Lacazette,19915,SetPiece,,None
+0.860999984741211,0.51,0.3609294891357422,SavedShot,Lyon,92,RightFoot,Moussa Dembele,19915,OpenPlay,,None

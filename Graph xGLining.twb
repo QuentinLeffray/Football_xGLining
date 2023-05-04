@@ -1,0 +1,932 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='gridline'>
+      <format attr='line-pattern-only' value='solid' />
+      <format attr='stroke-color' value='#ffffff' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource caption='data' inline='true' name='federated.0uyqpad0a8yvrv1h8q50210rv1wg' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data' name='textscan.16zy3fe1lk5uc4120lake1fby72g'>
+            <connection class='textscan' directory='C:/Users/Nom/Desktop/Football Data/xG lining' filename='data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.16zy3fe1lk5uc4120lake1fby72g' name='data.csv' table='[data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+            <column datatype='real' name='x' ordinal='0' />
+            <column datatype='real' name='y' ordinal='1' />
+            <column datatype='real' name='xG' ordinal='2' />
+            <column datatype='string' name='result' ordinal='3' />
+            <column datatype='string' name='team' ordinal='4' />
+            <column datatype='integer' name='minute' ordinal='5' />
+            <column datatype='string' name='shotType' ordinal='6' />
+            <column datatype='string' name='player' ordinal='7' />
+            <column datatype='integer' name='match_id' ordinal='8' />
+            <column datatype='string' name='situation' ordinal='9' />
+            <column datatype='string' name='player_assisted' ordinal='10' />
+            <column datatype='string' name='lastAction' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.16zy3fe1lk5uc4120lake1fby72g' name='data.csv' table='[data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+            <column datatype='real' name='x' ordinal='0' />
+            <column datatype='real' name='y' ordinal='1' />
+            <column datatype='real' name='xG' ordinal='2' />
+            <column datatype='string' name='result' ordinal='3' />
+            <column datatype='string' name='team' ordinal='4' />
+            <column datatype='integer' name='minute' ordinal='5' />
+            <column datatype='string' name='shotType' ordinal='6' />
+            <column datatype='string' name='player' ordinal='7' />
+            <column datatype='integer' name='match_id' ordinal='8' />
+            <column datatype='string' name='situation' ordinal='9' />
+            <column datatype='string' name='player_assisted' ordinal='10' />
+            <column datatype='string' name='lastAction' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>x</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[x]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>x</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_98C006C94C4745FCA353CA88B75409AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[y]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>y</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_98C006C94C4745FCA353CA88B75409AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>xG</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[xG]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>xG</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_98C006C94C4745FCA353CA88B75409AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>result</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[result]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>result</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_98C006C94C4745FCA353CA88B75409AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[team]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>team</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_98C006C94C4745FCA353CA88B75409AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minute</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[minute]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>minute</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_98C006C94C4745FCA353CA88B75409AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shotType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[shotType]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>shotType</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_98C006C94C4745FCA353CA88B75409AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>player</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_98C006C94C4745FCA353CA88B75409AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>match_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[match_id]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>match_id</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_98C006C94C4745FCA353CA88B75409AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>situation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[situation]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>situation</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_98C006C94C4745FCA353CA88B75409AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_assisted</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player_assisted]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>player_assisted</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_98C006C94C4745FCA353CA88B75409AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lastAction</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lastAction]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>lastAction</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data.csv_98C006C94C4745FCA353CA88B75409AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Running Sum xG' datatype='real' name='[Calculation_898749612080263180]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RUNNING_SUM(sum([xG]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Goal_Flag' datatype='real' name='[Calculation_898749612084797453]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='if [result] = &apos;Goal&apos;&#13;&#10;then&#13;&#10;[xG]&#13;&#10;END' />
+      </column>
+      <column aggregation='None' caption='Minute (classe)' datatype='integer' name='[Minute (classe)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[minute]' peg='0' size='1' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='data.csv' datatype='table' name='[__tableau_internal_object_id__].[data.csv_98C006C94C4745FCA353CA88B75409AA]' role='measure' type='quantitative' />
+      <column caption='Last Action' datatype='string' name='[lastAction]' role='dimension' type='nominal' />
+      <column caption='Match Id' datatype='integer' name='[match_id]' role='dimension' type='ordinal' />
+      <column caption='Minute' datatype='integer' name='[minute]' role='measure' type='quantitative' />
+      <column caption='Player' datatype='string' name='[player]' role='dimension' type='nominal' />
+      <column caption='Player Assisted' datatype='string' name='[player_assisted]' role='dimension' type='nominal' />
+      <column caption='Result' datatype='string' name='[result]' role='dimension' type='nominal' />
+      <column caption='Shot Type' datatype='string' name='[shotType]' role='dimension' type='nominal' />
+      <column caption='Situation' datatype='string' name='[situation]' role='dimension' type='nominal' />
+      <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+      <column datatype='real' name='[xG]' role='measure' type='quantitative' />
+      <column caption='X' datatype='real' name='[x]' role='measure' type='quantitative' />
+      <column caption='Y' datatype='real' name='[y]' role='measure' type='quantitative' />
+      <column-instance column='[result]' derivation='Attribute' name='[attr:result:nk]' pivot='key' type='nominal' />
+      <column-instance column='[result]' derivation='Min' name='[min:result:nk]' pivot='key' type='nominal' />
+      <column-instance column='[result]' derivation='None' name='[none:result:nk]' pivot='key' type='nominal' />
+      <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='shape' field='[none:result:nk]' palette=':default' type='shape'>
+            <map to=':filled/circle'>
+              <bucket>&quot;Goal&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;MissedShots&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;SavedShot&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='shape' field='[attr:result:nk]' palette=':default' type='shape'>
+            <map to=':filled/circle'>
+              <bucket>&quot;Goal&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;MissedShots&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;SavedShot&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>%missing%</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:team:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Lyon&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Lille&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='shape' field='[min:result:nk]' palette=':default' type='shape'>
+            <map to=':filled/circle'>
+              <bucket>&quot;Goal&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;MissedShots&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;SavedShot&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>%missing%</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;FR&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='data.csv' id='data.csv_98C006C94C4745FCA353CA88B75409AA'>
+            <properties context=''>
+              <relation connection='textscan.16zy3fe1lk5uc4120lake1fby72g' name='data.csv' table='[data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+                  <column datatype='real' name='x' ordinal='0' />
+                  <column datatype='real' name='y' ordinal='1' />
+                  <column datatype='real' name='xG' ordinal='2' />
+                  <column datatype='string' name='result' ordinal='3' />
+                  <column datatype='string' name='team' ordinal='4' />
+                  <column datatype='integer' name='minute' ordinal='5' />
+                  <column datatype='string' name='shotType' ordinal='6' />
+                  <column datatype='string' name='player' ordinal='7' />
+                  <column datatype='integer' name='match_id' ordinal='8' />
+                  <column datatype='string' name='situation' ordinal='9' />
+                  <column datatype='string' name='player_assisted' ordinal='10' />
+                  <column datatype='string' name='lastAction' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Base'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data' name='federated.0uyqpad0a8yvrv1h8q50210rv1wg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0uyqpad0a8yvrv1h8q50210rv1wg'>
+            <column caption='Running Sum xG' datatype='real' name='[Calculation_898749612080263180]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RUNNING_SUM(sum([xG]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column-instance column='[result]' derivation='Attribute' name='[attr:result:nk]' pivot='key' type='nominal' />
+            <column caption='Minute' datatype='integer' name='[minute]' role='measure' type='quantitative' />
+            <column-instance column='[minute]' derivation='None' name='[none:minute:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+            <column caption='Result' datatype='string' name='[result]' role='dimension' type='nominal' />
+            <column-instance column='[xG]' derivation='Sum' name='[sum:xG:qk]' pivot='key' type='quantitative' />
+            <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_898749612080263180]' derivation='User' name='[usr:Calculation_898749612080263180:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column datatype='real' name='[xG]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[attr:result:nk]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[attr:result:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[attr:result:nk]' member='&quot;MissedShots&quot;' />
+                <groupfilter function='member' level='[attr:result:nk]' member='&quot;SavedShot&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[usr:Calculation_898749612080263180:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='1' field='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[usr:Calculation_898749612080263180:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:minute:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:minute:qk]' value='0' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dotted' />
+            <format attr='stroke-size' id='refline0' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:team:nk]' />
+              <lod column='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:minute:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:minute:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label-type='none' scope='per-table' value='45' value-column='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:minute:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[usr:Calculation_898749612080263180:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:team:nk]' />
+              <lod column='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:team:nk]' />
+              <lod column='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:minute:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='10' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[usr:Calculation_898749612080263180:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:team:nk]' />
+              <lod column='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:minute:qk]' />
+              <shape column='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[attr:result:nk]' />
+              <lod column='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[sum:xG:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0uyqpad0a8yvrv1h8q50210rv1wg].[usr:Calculation_898749612080263180:qk] + [federated.0uyqpad0a8yvrv1h8q50210rv1wg].[usr:Calculation_898749612080263180:qk])</rows>
+        <cols>[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:minute:qk]</cols>
+      </table>
+      <simple-id uuid='{7F4629FD-C44B-4D93-91BA-4253CD62AFC1}' />
+    </worksheet>
+    <worksheet name='Scaler'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#ef6f6a' fontname='Barlow,Tahoma' fontsize='18'>Lille</run>
+            <run fontcolor='#cecece' fontname='Barlow,Tahoma' fontsize='18'>Æ </run>
+            <run fontcolor='#555555' fontname='Barlow,Tahoma' fontsize='18'>3 - 3</run>
+            <run fontcolor='#cecece' fontname='Barlow,Tahoma' fontsize='18'>Æ </run>
+            <run fontcolor='#08475e' fontname='Barlow,Tahoma' fontsize='18'>Lyon </run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#08475e' fontname='Barlow,Tahoma' fontsize='10'>XX / XX / XX</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#08475e' fontname='Barlow,Tahoma' fontsize='10'>Le xG (epected Goals) correspond au nombre de buts attendus en fonction des différentes positions de tirs tentés </run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#08475e' fontname='Barlow,Tahoma' fontsize='10'>● Les buts sont affichés par des ronds</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data' name='federated.0uyqpad0a8yvrv1h8q50210rv1wg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0uyqpad0a8yvrv1h8q50210rv1wg'>
+            <column caption='Running Sum xG' datatype='real' name='[Calculation_898749612080263180]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RUNNING_SUM(sum([xG]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column aggregation='None' caption='Minute (classe)' datatype='integer' name='[Minute (classe)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[minute]' peg='0' size='1' />
+            </column>
+            <column-instance column='[result]' derivation='Min' name='[min:result:nk]' pivot='key' type='nominal' />
+            <column caption='Minute' datatype='integer' name='[minute]' role='measure' type='quantitative' />
+            <column-instance column='[Minute (classe)]' derivation='None' name='[none:Minute (classe):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[team]' derivation='None' name='[none:team:nk]' pivot='key' type='nominal' />
+            <column caption='Result' datatype='string' name='[result]' role='dimension' type='nominal' />
+            <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_898749612080263180]' derivation='User' name='[usr:Calculation_898749612080263180:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column datatype='real' name='[xG]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[attr:result:nk]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[attr:result:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[attr:result:nk]' member='&quot;MissedShots&quot;' />
+                <groupfilter function='member' level='[attr:result:nk]' member='&quot;SavedShot&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[min:result:nk]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[min:result:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[min:result:nk]' member='&quot;MissedShots&quot;' />
+                <groupfilter function='member' level='[min:result:nk]' member='&quot;SavedShot&quot;' />
+                <groupfilter function='member' level='[min:result:nk]' member='%missing%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[usr:Calculation_898749612080263180:qk]' field-type='quantitative' fold='true' major-origin='0.0' major-show='false' major-spacing='1.0' scope='rows' synchronized='true' type='space' />
+            <format attr='auto-subtitle' class='1' field='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[usr:Calculation_898749612080263180:qk]' scope='rows' value='true' />
+            <format attr='display' class='1' field='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[usr:Calculation_898749612080263180:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[usr:Calculation_898749612080263180:qk]' scope='rows' value='xG' />
+            <format attr='width' field='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[usr:Calculation_898749612080263180:qk]' value='32' />
+            <format attr='tick-color' field='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[usr:Calculation_898749612080263180:qk]' value='#00000000' />
+            <format attr='line-pattern-only' value='dotted' />
+            <format attr='tick-color' value='#ffffff' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-width' data-class='total' value='1' />
+            <format attr='border-style' data-class='total' value='solid' />
+            <format attr='background-color' value='#333333' />
+            <format attr='background-color' data-class='total' value='#333333' />
+            <format attr='background-color' field='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[usr:Calculation_898749612080263180:qk]' value='#555555' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:Minute (classe):ok]' value='false' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='1' />
+            <format attr='border-style' data-class='total' value='solid' />
+            <format attr='border-width' data-class='total' scope='cols' value='1' />
+            <format attr='border-style' data-class='total' scope='cols' value='solid' />
+            <format attr='background-color' value='#555555' />
+            <format attr='background-color' data-class='total' value='#333333' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dotted' />
+            <format attr='stroke-size' id='refline0' value='1' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='dotted' />
+            <format attr='line-pattern-only' scope='rows' value='dotted' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='11' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:team:nk]' />
+              <lod column='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:team:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='1' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='772' />
+                <format attr='maxheight' value='772' />
+                <format attr='minwidth' value='1316' />
+                <format attr='maxwidth' value='1316' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='12' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[usr:Calculation_898749612080263180:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:team:nk]' />
+              <lod column='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:team:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='line-interpolation' value='step' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='13' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[usr:Calculation_898749612080263180:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:team:nk]' />
+              <lod column='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:team:nk]' />
+              <shape column='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[min:result:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='line-interpolation' value='linear' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0uyqpad0a8yvrv1h8q50210rv1wg].[usr:Calculation_898749612080263180:qk] + [federated.0uyqpad0a8yvrv1h8q50210rv1wg].[usr:Calculation_898749612080263180:qk])</rows>
+        <cols>[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:Minute (classe):ok]</cols>
+        <show-full-range>
+          <column>[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[Minute (classe)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{8163965E-6E0F-45E5-8241-C03B26213325}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Base'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='9' param='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:team:nk]' type='color' />
+            <card pane-specification-id='10' param='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[attr:result:nk]' type='shape' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[Result et Team (Combinés)]</field>
+            <field>[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[attr:result:nk]</field>
+            <field>[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:minute:ok]</field>
+            <field>[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:minute:qk]</field>
+            <field>[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:result:nk]</field>
+            <field>[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:shotType:nk]</field>
+            <field>[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:team:nk]</field>
+            <field>[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[sum:minute:ok]</field>
+            <field>[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[sum:xG:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{40AA645A-DEEC-4762-8B94-2020BE0A6760}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Scaler'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='12' param='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:team:nk]' type='color' />
+            <card pane-specification-id='13' param='[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[min:result:nk]' type='shape' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[Result et Team (Combinés)]</field>
+            <field>[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[attr:result:nk]</field>
+            <field>[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:Minute (classe):ok]</field>
+            <field>[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:minute:ok]</field>
+            <field>[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:minute:qk]</field>
+            <field>[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:result:nk]</field>
+            <field>[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:shotType:nk]</field>
+            <field>[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[none:team:nk]</field>
+            <field>[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[sum:minute:ok]</field>
+            <field>[federated.0uyqpad0a8yvrv1h8q50210rv1wg].[sum:xG:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6EAF0125-F79C-4CCE-ADF1-C69AD74C0E52}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Base' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Scaler' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
